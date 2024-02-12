@@ -1,5 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+
+import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   return (
@@ -10,6 +11,11 @@ export default function App() {
   );
 }
 
+const { v4: uuidv4 } = require('uuid');  
+  
+const uuid = uuidv4();  
+console.log(uuid);  
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -17,4 +23,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+}
+
+
+);
